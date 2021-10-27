@@ -100,8 +100,12 @@ html{
 .social-links{
     transition: 0.5s;
 }
-.social-links:hover{
+.social-links:hover, .social-links i:hover{
     transform: scale(1.5);
+    color: #12aef9 !important;
+}
+.social-links:active{
+    transform: scale(1.8);
 }
 .hero-mid{
     position: relative;
