@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<div class="loader-container">
+  <div class="loader">
+      <img src="./Cube-1s-200px.svg" alt="">
+  </div>
+</div>
+
 <html lang="en">
 
 <head>
@@ -6,16 +13,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solomon Tuangpu</title>
+
+  <!-- site styling css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom-bootstrap.css">
   <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
   <link rel="stylesheet" href="vendor/animate_it/animate.css">
   <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
+ <style>
+
+  .loader-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 5000 !important;
+    width: 100%;
+    height: 100vh;
+  }
+  .loader img{
+    width: 100px;
+    height: 100px;
+  }
+
+ </style>
+
 </head>
 
 <body>
-
   <header class="container-fluid site-nav animate__animated animate__slideInDown">
     <div class="row">
       <div class="container">
@@ -229,9 +266,9 @@
   </section>
 
   <section id="services" class="container-fluid">
-    <div id="particles-js" class="row d-flex justify-content-center align-items-center min-vh-100">
+    <div id="particles-js" class="row d-flex justify-content-center align-items-center min-vh-100 service-group">
       <div class="container">
-        <div class="row py-3">
+        <div class="row p-4">
           <div class="col-12">
             <div class="text-center py-5" data-aos="zoom-in-down">
               <p class="service-title-text text-uppercase mb-0">services</p>
@@ -299,7 +336,6 @@
             </div>
           </div>
 
-          <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="mb-3"  data-aos="zoom-in"  data-aos-delay="">
                 <div class="card work-card mx-3 mx-md-0">
@@ -401,7 +437,7 @@
                 </div>
               </div>
             </div>
-          </div>
+        
 
         </div>
       </div>
@@ -409,7 +445,7 @@
   </section>
 
   <section id="contact" class="container-fluid">
-      <div class="row d-flex justify-content-center align-items-center min-vh-100">
+      <div class="row d-flex justify-content-center align-items-center min-vh-100 py-5">
          <div class="container">
             <div class="row">
                <div class="col-12">
@@ -462,6 +498,11 @@
                     </div>
                   </div>
                </div>
+               <div class="col-12">
+                  <div class="" data-aos="zoom-in-down">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.2445703406647!2d94.03393781447356!3d23.197756015580268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374b7305a6588189%3A0xd6b3a0878f81d744!2sBiakinn%20Lampi%2C%20Kalemyo!5e0!3m2!1sen!2smm!4v1635301917774!5m2!1sen!2smm" width="100%" height="450" style="border:none;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -492,6 +533,7 @@
   <script src="vendor/bar_fill/jquery.barfiller.js"></script>
   <script src="vendor/tilt_js/tilt.jquery.min.js"></script>
   <script src="js/app.js"></script>
+
 </body>
 
 </html>
